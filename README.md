@@ -39,3 +39,24 @@ This project demonstrates **CRUD operations in MERN**, **AI API integration**, a
 - When a note is created → Transcription is stored in MongoDB.
 - When user edits transcript → Previous summary is cleared, "Generate Summary" button reappears.
 - Once summary is generated → Button is disabled until note is edited again.
+
+---
+
+## ⚙️ Installation & Setup
+
+### 🔧 Prerequisites
+
+- Node.js (>= 16.x)
+- MongoDB Atlas or Local MongoDB
+- OpenAI/Gemini API Key
+
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/voice-notes-ai.git
+cd voice-notes-ai
+cd backend
+npm install
+```
