@@ -5,7 +5,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://voice-notes-with-ai-summarization.netlify.app/",
+    origin: "https://voice-notes-with-ai-summarization.netlify.app",
     credentials: true,
   })
 );
