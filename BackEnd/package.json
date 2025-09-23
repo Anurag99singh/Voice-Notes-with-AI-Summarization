@@ -4,7 +4,7 @@
   "description": "Voice notes summerization app",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --env-file=config.env  src/server.js"
+    "start": "node src/server.js"
   },
   "author": "Anurag Singh",
   "license": "ISC",

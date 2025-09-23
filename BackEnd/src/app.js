@@ -15,3 +15,4 @@ app.use(express.json());
 // app.use("/api", limiter);
 app.use("/api/notes", noteRouter);
 module.exports = app;
+// "start": "nodemon --env-file=config.env  src/server.js"
