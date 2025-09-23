@@ -57,6 +57,26 @@ This project demonstrates **CRUD operations in MERN**, **AI API integration**, a
 ```bash
 git clone https://github.com/<your-username>/voice-notes-ai.git
 cd voice-notes-ai
+```
+
+### 2️⃣ Setup Backend
+
 cd backend
 npm install
-```
+
+### Create a .env file inside the backend folder:
+
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+OPENAI_API_KEY=your_openai_or_gemini_api_key
+
+### Run the backend server:
+
+npm start
+
+### 3️⃣ Setup Frontend
+
+cd ../frontend
+npm install
+VITE_BACKEND_URL=http://localhost:3000
+npm run dev
