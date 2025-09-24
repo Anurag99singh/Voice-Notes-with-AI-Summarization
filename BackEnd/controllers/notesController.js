@@ -89,7 +89,7 @@ exports.createNote = async (req, res) => {
     const note = new Note({
       audioUrl: publicData.publicUrl,
       audioMime: req.file.mimetype,
-      title: "",
+      // title: "",
     });
     await note.save();
 
@@ -133,7 +133,7 @@ exports.getNote = async (req, res) => {
 
 exports.updateNote = async (req, res) => {
   try {
-    const { transcript, title } = req.body;
+    const { transcript } = req.body;
 
     const note = await Note.findById(req.params.id);
     if (!note) return res.status(404).json({ error: "Note not found" });

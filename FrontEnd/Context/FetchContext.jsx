@@ -50,7 +50,7 @@ function FetchContext({ children }) {
   async function uploadAudio(blob) {
     setLoading(true);
     const fd = new FormData();
-    console.log(fd);
+    // console.log(fd);
     fd.append("audio", blob, "note.webm");
     const res = await fetch(`${API}/notes`, { method: "POST", body: fd });
     const note = await res.json();
