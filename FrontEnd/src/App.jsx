@@ -101,7 +101,7 @@ function App() {
                 </div>
               )}
 
-              {note.summary && (
+              {/* {note.summary && (
                 <div className="mt-2 text-sm bg-gray-50 p-2 rounded">
                   <strong>Summary:</strong>
                   <div
@@ -109,6 +109,14 @@ function App() {
                       __html: note.summary.replace(/\n/g, "<br/>"),
                     }}
                   />
+                </div>
+              )} */}
+              {note.summary && (
+                <div className="mt-2 text-sm bg-gray-50 p-2 rounded">
+                  <strong>Summary:</strong>
+                  {note.summary.split("\n").map((line, i) => (
+                    <p key={i}>{line}</p>
+                  ))}
                 </div>
               )}
             </div>
