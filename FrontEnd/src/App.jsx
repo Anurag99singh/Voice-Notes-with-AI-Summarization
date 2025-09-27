@@ -23,6 +23,7 @@ function App() {
   useEffect(() => {
     fetchNotes();
   }, []);
+  //
 
   return (
     <div className="min-h-screen w-full   flex items-start justify-between">
